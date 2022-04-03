@@ -1,0 +1,22 @@
+if {[catch {package require tbcload 1.6} err] == 1} {
+    return -code error "[info script]: The TclPro ByteCode Loader is not available or does not support the correct version -- $err"
+}
+tbcload::bceval {
+TclPro ByteCode 2 0 1.7 8.6
+1 0 7 2 0 0 4 0 2 1 1 -1 -1
+7
+w0E<!)'!!
+1
+z
+1
+'!
+2
+x
+4
+DP)*F
+x
+11
+RZ!iCv'ycDdn|+
+0
+0
+}
