@@ -66,9 +66,6 @@ cat main.tcl
 wish8.6 main.tcl 
 sudo apt install starkit
 cd 
-wget "https://camel-builds.s3.amazonaws.com/ActiveTcl/x86_64-linux-glibc-2.17/20210816T193804Z/ActiveTcl-8.6.11.1.0000-x86_64-linux-glibc-2.17-e4e2f327.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ5FYQM547I2EFPRW%2F20220403%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220403T165457Z&X-Amz-Expires=21600&X-Amz-SignedHeaders=host&X-Amz-Signature=869ea62c0727d09f6156c7727b035e2a7cbf77b9503c1e27dbbb3b124ac5f9ef" -o activetcl.tar.gz
-ll
-mv ActiveTcl-8.6.11.1.0000-x86_64-linux-glibc-2.17-e4e2f327.tar.gz\?X-Amz-Algorithm\=AWS4-HMAC-SHA256\&X-Amz-Credential\=AKIAQ5FYQM547I2EFPRW%2F20220403%2Fus-east-1%2Fs3%2Faws4_request\&X-Amz-Date\=20220403T165457Z\&X-Amz-Expires\=21600\&X-Amz-Sign acttcl.tar.gz
 ll
 ll -h
 tar zxf acttcl.tar.gz 
@@ -142,28 +139,6 @@ cd tdk
 git status
 rm -rf .git
 ll
-git init
-git add .
-git commit -m "first commit"
-git config --global user.email "kakumanivrn@gmail.com"
-git config --global user.name "Varun Kakumani"
-git commit -m "first commit"
-git remote add origin https://github.com/kakumanivrn/tdk.git
-git push -u origin main
-git branch -M main
-git push -u origin main
-ssh-keygen -t ed25519 -C "kakumanivrn@gmail.com"
-cat ~/.ssh/id_ed25519.pub 
-git push -u origin main
-ssh -T git@github.com
-rm -rf .git
-git init
-git branch -M main
-git add .
-git commit -m "first"
-git branch -M main
-git remote add origin git@github.com:kakumanivrn/tdk.git
-git push -u origin main
 exit
 ll
 cat .bash_history
